@@ -5,8 +5,16 @@ on:
       - master
 
 jobs:
+
+    
   build_and_push:
+    permissions:
+      contents: write
+      packages: write
+      id-token: write
     runs-on: ubuntu-latest
+
+
 
     steps:
       - name: Check out the code
